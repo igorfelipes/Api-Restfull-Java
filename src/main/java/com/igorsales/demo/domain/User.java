@@ -14,18 +14,17 @@ public class User  implements Serializable {
     private String id;
     private String name;
     private String email;
-    private String phone;
 
     public User(){
 
     }
 
-    public User(String id, String name, String email, String phone) {
+    public User(String id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.phone = phone;
     }
+
 
     public String getId() {
         return id;
@@ -51,13 +50,6 @@ public class User  implements Serializable {
         this.email = email;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 
     @Override
     public boolean equals(Object o) {
